@@ -241,3 +241,99 @@ export const templates: Template[] = [
     ]
   }
 ];
+
+// Additional templates
+templates.push(
+  {
+    id: 'freelancer',
+    name: 'Freelancer',
+    description: 'Services, rates, and booking',
+    category: 'Portfolio',
+    thumbnail: '',
+    gradient: 'linear-gradient(135deg, #1a1a2e, #6366f1)',
+    settings: { title: 'Freelancer', description: '', favicon: '', ogImage: '', backgroundColor: '#0a0a0a', customCSS: '', fontFamily: 'DM Sans' },
+    sections: [
+      sec([
+        h('I design\nexperiences.', 1, { fontSize: '4rem', lineHeight: '1.1', letterSpacing: '-0.03em', fontFamily: 'DM Sans' }),
+        t('Product designer with 8+ years building apps people love. Available for freelance.'),
+        btn('Book a Call', '#', { backgroundColor: '#6366f1' }),
+        btn('See My Work ↓', '#', { backgroundColor: 'transparent', border: '1px solid rgba(255,255,255,0.2)' })
+      ], { backgroundGradient: 'linear-gradient(180deg, #0a0a0a, #0f0f2d)', minHeight: '100vh' }),
+      sec([
+        h('Services', 2, { color: '#a5b4fc' }),
+        t('🎨 UI/UX Design — $150/hr\n📱 Mobile App Design — $8K+\n🌐 Website Design — $5K+\n🔄 Design Systems — $12K+\n📊 UX Audit — $3K', { textAlign: 'left' as const, lineHeight: '2.5' }),
+      ], { backgroundColor: '#0f0f1a' }),
+      sec([
+        h('Let\'s work together', 2),
+        form()
+      ], { backgroundColor: '#0a0a14' })
+    ]
+  },
+  {
+    id: 'event',
+    name: 'Event',
+    description: 'Conference or meetup landing page',
+    category: 'Landing Page',
+    thumbnail: '',
+    gradient: 'linear-gradient(135deg, #f97316, #dc2626)',
+    settings: { title: 'TechConf 2026', description: '', favicon: '', ogImage: '', backgroundColor: '#0a0a0a', customCSS: '', fontFamily: 'Space Grotesk' },
+    sections: [
+      sec([
+        t('MARCH 15-17, 2026 • SAN FRANCISCO', { fontSize: '0.85rem', letterSpacing: '0.2em', color: '#f97316' }),
+        h('TechConf\n2026', 1, { fontSize: '5rem', lineHeight: '1', fontFamily: 'Space Grotesk', letterSpacing: '-0.04em' }),
+        t('3 days. 50 speakers. 1 mission:\nBuild the future of technology.'),
+        btn('Get Tickets — $299', '#', { backgroundColor: '#f97316', color: '#fff' }),
+        countdown('2026-03-15T09:00:00')
+      ], { backgroundGradient: 'linear-gradient(180deg, #0a0a0a, #1a0a00)', minHeight: '100vh' }),
+      sec([
+        h('Speakers', 2, { color: '#f97316' }),
+        t('🎤 Jane Smith — CEO, FutureTech\n🎤 John Doe — CTO, CloudScale\n🎤 Alex Chen — VP Engineering, DataFlow\n🎤 Maria Garcia — Founder, AILab', { textAlign: 'left' as const, lineHeight: '2.2' }),
+      ], { backgroundColor: '#111' }),
+    ]
+  },
+  {
+    id: 'podcast',
+    name: 'Podcast',
+    description: 'Show landing with episodes',
+    category: 'Landing Page',
+    thumbnail: '',
+    gradient: 'linear-gradient(135deg, #7c3aed, #2563eb)',
+    settings: { title: 'The Show', description: '', favicon: '', ogImage: '', backgroundColor: '#0a0a0a', customCSS: '', fontFamily: 'Inter' },
+    sections: [
+      sec([
+        img('https://placehold.co/200x200/7c3aed/fff?text=🎙', { borderRadius: '20px', width: '160px', height: '160px' }),
+        h('The Daily\nBuild', 1, { fontSize: '3.5rem', lineHeight: '1.1' }),
+        t('A podcast about building products, shipping fast, and learning from failures. New episodes every Tuesday.'),
+        btn('🎧 Listen on Spotify', '#', { backgroundColor: '#1db954' }),
+        btn('🍎 Apple Podcasts', '#', { backgroundColor: '#fc3c44' })
+      ], { backgroundGradient: 'linear-gradient(180deg, #0a0a1a, #1a0a2e)', minHeight: '100vh' }),
+      sec([
+        h('Latest Episodes', 2, { color: '#a78bfa' }),
+        t('EP 47 — Why We Rewrote Everything in Rust\nEP 46 — The $0 to $10K MRR Playbook\nEP 45 — Burnout Is Real: How I Recovered\nEP 44 — Hiring Your First Engineer', { textAlign: 'left' as const, lineHeight: '2.5' }),
+        social({ twitter: '#', youtube: '#', instagram: '#' })
+      ], { backgroundColor: '#0f0f1a' })
+    ]
+  },
+  {
+    id: 'nonprofit',
+    name: 'Nonprofit',
+    description: 'Charity or cause with donate CTA',
+    category: 'Business',
+    thumbnail: '',
+    gradient: 'linear-gradient(135deg, #059669, #10b981)',
+    settings: { title: 'GreenEarth', description: '', favicon: '', ogImage: '', backgroundColor: '#0a0a0a', customCSS: '', fontFamily: 'Inter' },
+    sections: [
+      sec([
+        h('Every tree\ncounts.', 1, { fontSize: '4rem', lineHeight: '1.1', letterSpacing: '-0.02em' }),
+        t('We\'ve planted 2.3 million trees across 40 countries.\nJoin us in restoring our planet.'),
+        btn('Donate Now 🌱', '#', { backgroundColor: '#059669', fontSize: '1.1rem', padding: '16px 40px' }),
+        t('🌍 2.3M trees • 40 countries • 150K donors', { fontSize: '0.9rem', color: '#10b981' })
+      ], { backgroundGradient: 'linear-gradient(180deg, #0a0a0a, #001a0a)', minHeight: '100vh' }),
+      sec([
+        h('Our Impact', 2, { color: '#10b981' }),
+        t('🌳 2,300,000 trees planted\n💧 45M gallons of water conserved\n🏠 12,000 communities supported\n🐾 300+ species protected', { textAlign: 'left' as const, lineHeight: '2.5' }),
+        btn('See Full Report', '#', { backgroundColor: 'transparent', border: '1px solid #10b981', color: '#10b981' })
+      ], { backgroundColor: '#0a140a' })
+    ]
+  }
+);
