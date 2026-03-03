@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "OnePage — Beautiful one-page sites in minutes",
+  title: "PurePage.co — Beautiful one-page sites in minutes",
   description: "Pick a template, customize everything, export clean HTML. No signup required.",
 };
 

@@ -19,7 +19,7 @@ export default function SitesPage() {
 
   return <div style={{ minHeight: '100vh', background: '#0f172a', color: '#e2e8f0', fontFamily: 'Inter, sans-serif' }}>
     <nav style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '16px 32px', borderBottom: '1px solid #1e293b' }}>
-      <a href="/" style={{ color: '#6366f1', fontWeight: 700, fontSize: '1.2rem', textDecoration: 'none' }}>◆ OnePage</a>
+      <a href="/" style={{ color: '#6366f1', fontWeight: 700, fontSize: '1.2rem', textDecoration: 'none' }}>◆ PurePage.co</a>
       <a href="/" style={{ color: '#94a3b8', textDecoration: 'none', fontSize: '0.9rem' }}>← Templates</a>
     </nav>
     <div style={{ maxWidth: '900px', margin: '0 auto', padding: '48px 24px' }}>

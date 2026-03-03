@@ -148,7 +148,7 @@ export default function EditorPage({ params }: { params: Promise<{ id: string }>
     {/* Top bar */}
     <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '0 16px', height: '52px', borderBottom: '1px solid #1e293b', background: '#0b1120', flexShrink: 0 }}>
       <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-        <a href="/" style={{ color: '#6366f1', fontWeight: 700, fontSize: '1.1rem', textDecoration: 'none' }}>◆ OnePage</a>
+        <a href="/" style={{ color: '#6366f1', fontWeight: 700, fontSize: '1.1rem', textDecoration: 'none' }}>◆ PurePage.co</a>
         <span style={{ color: '#475569', fontSize: '0.85rem' }}>/ {site.name}</span>
       </div>
       <div style={{ display: 'flex', gap: '4px', background: '#1e293b', borderRadius: '8px', padding: '3px' }}>

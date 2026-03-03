@@ -6,7 +6,7 @@ export default function Home() {
   return <div style={{ minHeight: '100vh', background: '#0f172a', color: '#e2e8f0', fontFamily: 'Inter, sans-serif' }}>
     {/* Nav */}
     <nav style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '16px 32px', borderBottom: '1px solid #1e293b' }}>
-      <span style={{ color: '#6366f1', fontWeight: 700, fontSize: '1.2rem' }}>◆ OnePage</span>
+      <span style={{ color: '#6366f1', fontWeight: 700, fontSize: '1.2rem' }}>◆ PurePage.co</span>
       <div style={{ display: 'flex', gap: '24px', alignItems: 'center' }}>
         <a href="/sites" style={{ color: '#94a3b8', textDecoration: 'none', fontSize: '0.9rem', transition: 'color 0.15s' }}
           onMouseEnter={e => e.currentTarget.style.color = '#e2e8f0'}
@@ -71,7 +71,7 @@ export default function Home() {
 
     {/* Footer */}
     <div style={{ textAlign: 'center', padding: '32px', borderTop: '1px solid #1e293b', color: '#475569', fontSize: '0.85rem' }}>
-      Built with ◆ OnePage
+      Built with ◆ PurePage.co
     </div>
   </div>;
 }

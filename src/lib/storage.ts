@@ -1,7 +1,7 @@
 import { SiteData } from './types';
 
-const SITES_KEY = 'onepage_sites';
-const AUTH_KEY = 'onepage_auth';
+const SITES_KEY = 'purepage_sites';
+const AUTH_KEY = 'purepage_auth';
 
 export const storage = {
   getSites(): SiteData[] {
@@ -35,7 +35,7 @@ export const storage = {
 
   authenticate(password: string): boolean {
     // Simple password gate for export
-    if (password === 'onepage2026') {
+    if (password === 'purepage2026') {
       localStorage.setItem(AUTH_KEY, 'true');
       return true;
     }
