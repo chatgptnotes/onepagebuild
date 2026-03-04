@@ -9,6 +9,7 @@ import { v4 as uuid } from 'uuid';
 import ElementRenderer from '@/components/ElementRenderer';
 import { ElementStylePanel, SectionStylePanel, PageSettingsPanel } from '@/components/StylePanel';
 import AddPanel from '@/components/AddPanel';
+import ErrorBoundary from '@/components/ErrorBoundary';
 import { supabase } from '@/lib/supabase';
 
 type Viewport = 'desktop' | 'tablet' | 'phone';
